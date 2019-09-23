@@ -1,5 +1,7 @@
 <?php
 
+use GrahamCampbell\Markdown\Facades\Markdown;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +14,6 @@
 */
 
 Route::get('/', function () {
+    // dd(Markdown::convertToHtml('foo'));
     return view('welcome');
 });
